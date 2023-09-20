@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vw;
+        min-height: 100vh;
+        font-family: sans-serif;
+        background-color: #9e9e9e;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .danger-icon {
+        width: 100%;
+        font-size: 10rem;
+        color: red;
+        text-align: center;
+        animation: myAnim 3s ease 0s infinite normal forwards;
+      }
+
+      .container h1 {
+        color: #333;
+        margin-bottom: 7px;
+      }
+
+      .container p {
+        color: #282828;
+      }
+
+      @keyframes myAnim {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+
+        25%,
+        75% {
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .container {
+          width: 100%;
+          padding: 10px;
+          font-size: 80%;
+          text-align: center;
+        }
+
+        .danger-icon {
+          font-size: 8rem;
+        }
+      }
+    </style>
+
+    <title>Sorry, we are currently preparing that feature</title>
+  </head>
+  <body>
+    <div class="container">
+      <span class="danger-icon">⚠︎</span>
+      <h1>Opps, this feature cannot be accessed at this time</h1>
+      <p>
+        You can contact us via
+        <a
+          href="https://instagram.com/iusedk_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+          >Instagram</a
+        >
+        or <a href="https://discord.gg/kvYSWT4TFY">Discord</a>. Sorry for the
+        inconvenience.
+      </p>
+    </div>
+  </body>
+</html>
